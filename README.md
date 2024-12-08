@@ -8,8 +8,9 @@ Ying liang-0863353
 Rongqing Du-0873543
 
 Description:
-With growing demands and cut-throat competitions in the market, a Superstore Giant is seeking your knowledge in understanding what works best for them. They would like to understand which products, regions, categories and customer segments they should target or avoid.You can even take this a step further and try and build a Regression model to predict Sales or Profit.Go crazy with the dataset, but also make sure to provide some business insights to improve.
-
+Retail dataset of a global superstore for 4 years.
+Perform EDA and Predict the sales of the next 7 days from the last date of the Training dataset!
+Time series analysis deals with time series based data to extract patterns for predictions and other characteristics of the data. It uses a model for forecasting future values in a small time frame based on previous observations. It is widely used for non-stationary data, such as economic data, weather data, stock prices, and retail sales forecasting.
 Modules in the Superstore Website:
  Index page-First page of the website which has about,data,services and contact menus.
  About Page-This shows the description of the superstore data,the reference link for this dataset and the button to navigate to home page
