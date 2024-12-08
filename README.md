@@ -16,3 +16,7 @@ Modules in the Superstore Website:
  Data page-This page shows the view of the superstore table.
  Service Page-This is the additional page to give you the information about the services which we have in the superstore like office suplies,technology and furniture.
  Contact Page-This page will give the information of the contact number of the customer service,store email id and the location of the store.By clicking the send us message this button will navigate to your gmail to write your queries and send the email directly.
+
+ To run this project
+ Clone the repository using the below command:
+ git clone https://github.com/Hariniguna2000/Python_FinalProject_Group6
