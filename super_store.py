@@ -6,9 +6,6 @@ from numpy import convolve
 app = Flask(__name__)
 
 
-# Path to the SQLite database file
-
-
 # Function to get a database connection
 def get_db():
     conn = sqlite3.connect("/Users/pavithragunasekaran/Documents/DAB111/Week 12_flask/superstore.db")
@@ -32,15 +29,11 @@ def data():
     
     superstore=conn.execute("select * from super_table").fetchall()
     print(superstore)
-    # sample=conn.execute("create table harini1 (name char,num integer)")
+    
     
     return render_template('data.html',data=superstore)
 
-    # Query to get all data from the database
-    # cursor.execute("select * from global_superstore")  # Adjust the table name as needed
-    # rows = cursor.fetchall()
-
-    # Close the database connection
+   
 
 @app.route('/Services')
 def service():
