@@ -23,3 +23,4 @@ Modules in the Superstore Website:
  git clone https://github.com/Hariniguna2000/Python_FinalProject_Group6
  2.Install all the libraries needed for application to run use the below command:
  pip install -r requirements.txt
+ 3.To run the data page change the path of super_store db in superstore.py file
