@@ -1,10 +1,8 @@
 from flask import Flask, render_template
 import sqlite3
-
 from numpy import convolve
 
 app = Flask(__name__)
-
 
 # Function to get a database connection
 def get_db():
@@ -20,21 +18,12 @@ def index():
 @app.route('/about')
 def about():
     return render_template('about.html')
-
-
-
 @app.route('/data')
 def data():
     conn = get_db()
-    
     superstore=conn.execute("select * from super_table").fetchall()
     print(superstore)
-    
-    
     return render_template('data.html',data=superstore)
-
-   
-
 @app.route('/Services')
 def service():
     return render_template('service.html')  
