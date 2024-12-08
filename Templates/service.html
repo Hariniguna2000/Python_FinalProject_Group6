@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <a href="/" class="round-back">
+        <i class="fa fa-arrow-left"></i> <!-- Font Awesome left arrow icon -->
+    </a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .round-back {
+            display: inline-block;
+            background-color:black; /* Blue background */
+            border-radius: 25%; /* Makes it round */
+            padding: 15px; /* Adjust size */
+            color: white; /* White icon */
+            text-align: center;
+            font-size: 1.5em; /* Icon size */
+            transition: background-color 0.3s;
+            text-decoration: none;
+            margin-right:1200px;
+        }
+        /* Hover effect for the back icon */
+        .round-back:hover {
+            background-color: #1976D2; /* Darker blue when hovered */
+        }
+
+        .round-back i {
+            margin: 0;
+        }
+        header {
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #555;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Section Styling */
+        .section {
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Responsive Layout */
+        @media (min-width: 768px) {
+            .section {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .section:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+            .section img {
+                width: 50%;
+            }
+
+            .section-text {
+                width: 50%;
+            }
+        }
+
+        footer {
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        SUPERSTORE SERVICES
+    </header>
+
+    <div class="content">
+        <!-- Furniture Section -->
+        <div class="section">
+            <img src="/static/images/furniture.jpg" alt="Furniture">
+            <div class="section-text">
+                <h2>Furniture</h2>
+                <p>
+                    Transform your workspace with our premium furniture collection, including ergonomic chairs, modern desks, and storage solutions. Perfect for offices and homes, our furniture combines style and functionality.
+                </p>
+            </div>
+        </div>
+
+        <!-- Technology Section -->
+        <div class="section">
+            <img src="/static/images/technology.jpg" alt="Technology">
+            <div class="section-text">
+                <h2>Technology</h2>
+                <p>
+                    Stay ahead with our cutting-edge technology products, including high-performance laptops, all-in-one printers, and accessories. Perfect for professionals, students, and tech enthusiasts.
+                </p>
+            </div>
+        </div>
+
+        <!-- Office Supplies Section -->
+        <div class="section">
+            <img src="/static/images/office.jpeg" alt="Office Supplies">
+            <div class="section-text">
+                <h2>Office Supplies</h2>
+                <p>
+                    Stock up on essential office supplies, from premium notebooks and pens to organizational tools. Designed to boost productivity and creativity, our supplies are ideal for any workspace.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Superstore. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

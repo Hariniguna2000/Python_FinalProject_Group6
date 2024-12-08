@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #56ccf2, #2f80ed);
+            overflow: hidden;
+        }
+
+        /* Canvas-like Effect */
+        .canvas-container {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .canvas-container::before, .canvas-container::after {
+            content: '';
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(33, 150, 243, 0.5), transparent);
+            animation: rotate 6s linear infinite;
+            z-index: 0;
+        }
+   
+
+        .canvas-container::after {
+            top: auto;
+            bottom: -50px;
+            left: auto;
+            right: -50px;
+            background: radial-gradient(circle, rgba(255, 193, 7, 0.5), transparent);
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Box Content */
+        .box-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #2196F3;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .decorative-line {
+            width: 80px;
+            height: 3px;
+            background-color: #2196F3;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+
+        .dataset-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background: #2196F3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            margin-right:200px;
+        }
+
+        .dataset-link:hover {
+            background: #1976D2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="canvas-container">
+        <div class="box-content">
+            
+            <div class="decorative-line"></div>
+            <p>
+                With growing demands and cut-throat competitions in the market, a Superstore Giant is seeking your knowledge in understanding what works best for them. They would like to understand which products, regions, categories, and customer segments they should target or avoid.
+            </p>
+            <p>
+                You can even take this a step further and try and build a regression model to predict sales or profit. Go crazy with the dataset, but also make sure to provide some business insights to improve.
+            </p>
+            <p>To view the dataset In Kaggle. <a href="https://www.kaggle.com/datasets/vivek468/superstore-dataset-final" target="_blank" >Click Here
+                </a>
+                </p>
+            
+            <a href="/" target="_blank" class="dataset-link">Back To Home Page</a>
+           
+        </div>
+    </div>
+    
+</body>
+
+</html>  
