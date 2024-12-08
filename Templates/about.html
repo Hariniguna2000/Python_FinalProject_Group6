@@ -29,6 +29,7 @@
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             overflow: hidden;
+            margin-left:40px;
         }
 
         .canvas-container::before, .canvas-container::after {
@@ -105,8 +106,64 @@
         .dataset-link:hover {
             background: #1976D2;
         }
+       
+    /* Styling for Variable Definitions Section */
+   
+    /* Styling for Variable Definitions Section */
+    .variable-definitions-box {
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        padding: 15px 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 600px; /* Reduced width for a smaller box */
+        margin: 30px auto; /* Slightly reduced margin */
+        line-height: 1.5; /* Adjusted line height for compactness */
+       
+    }
+
+    .variable-definitions-box h2 {
+        text-align: center;
+        color: #2f80ed;
+        margin-bottom: 15px; /* Reduced spacing below the heading */
+        font-size: 1.8em; /* Slightly smaller font size */
+        font-weight: bold;
+    }
+
+    .variable-definitions-box ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .variable-definitions-box li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px; /* Reduced spacing between items */
+        font-size: 1em; /* Smaller font size for text */
+        color: #333;
+    }
+
+    .variable-definitions-box li strong {
+        color:#2f80ed;
+        margin-right: 8px; /* Reduced spacing between label and description */
+        font-weight: bold;
+    }
+
+    .variable-definitions-box li span {
+        color: #666;
+    }
+
+    .variable-definitions-box li i {
+        color: #2f80ed;
+        margin-right: 8px; /* Adjusted icon spacing */
+        font-size: 1.2em; /* Reduced icon size */
+        line-height: 1.2;
+    }
+
+
+</style>
         
-    </style>
+   
 </head>
 <body>
     <div class="canvas-container">
@@ -126,6 +183,29 @@
             <a href="/" target="_blank" class="dataset-link">Back To Home Page</a>
            
         </div>
+    </div>
+    <div class="variable-definitions-box">
+        <h2>Variable Definitions</h2>
+        <ul>
+            <li><i>📋</i><strong>Row ID:</strong> <span>A unique identifier for each row in the dataset like primary key.</span></li>
+            <li><i>📦</i><strong>Order ID:</strong> <span>A unique identifier for each order placed in the superstore.</span></li>
+            <li><i>🗓️</i><strong>Order Date:</strong> <span>The date on which the order was placed.</span></li>
+            <li><i>📅</i><strong>Ship Date:</strong> <span>The date on which the order was shipped.</span></li>
+            <li><i>🚚</i><strong>Ship Mode:</strong> <span>The mode of shipment to deliver the order.</span></li>
+            <li><i>👤</i><strong>Customer ID:</strong> <span>A unique id for each customer.</span></li>
+            <li><i>📝</i><strong>Customer Name:</strong> <span>The name of the customer who placed the order.</span></li>
+            <li><i>🏢</i><strong>Segment:</strong> <span>The market segment to which the customer belongs (e.g., Consumer, Corporate, Home Office).</span></li>
+            <li><i>🌍</i><strong>Country:</strong> <span>The country where the order was placed</span></li>
+            <li><i>🏙️</i><strong>City:</strong> <span>The city where the customer is located.</span></li>
+            <li><i>📍</i><strong>State:</strong> <span>The state where the customer is located.</span></li>
+            <li><i>✉️</i><strong>Postal Code:</strong> <span>The postal code of the customer's location.</span></li>
+            <li><i>📊</i><strong>Region:</strong> <span>The geographical region where the customer is located.</span></li>
+            <li><i>🔢</i><strong>Product ID:</strong> <span>The unique product id in the inventory.</span></li>
+            <li><i>🛒</i><strong>Category:</strong> <span>The category to which the product belongs (eg:Furniture, Office Supplies, Technology).</span></li>
+            <li><i>📂</i><strong>Sub-Category:</strong> <span>A sub-classification of the product category.</span></li>
+            <li><i>📝</i><strong>Product Name:</strong> <span>The name of the product.</span></li>
+            <li><i>💰</i><strong>Sales:</strong> <span>The revenue generated from the sale of the product.</span></li>
+        </ul>
     </div>
     
 </body>
